@@ -22,6 +22,7 @@ import {
     Clock,
     FileText
 } from "lucide-react";
+import EditProfileSection from "../components/settings/Profile-edit";
 
 const SettingsPage = () => {
     const [activeTab, setActiveTab] = useState("notifications");
@@ -576,7 +577,7 @@ const SettingsPage = () => {
                     >
                         <h3 className="text-xl font-semibold text-gray-100 mb-6">Profile Settings</h3>
                         {/* <p className="text-gray-400">Profile management features will be implemented here.</p> */}
-						<SettingSection/>
+						<EditProfileSection/>
                     </motion.div>
                 );
 
@@ -588,7 +589,8 @@ const SettingsPage = () => {
                         animate={{ opacity: 1, y: 0 }}
                     >
                         <h3 className="text-xl font-semibold text-gray-100 mb-6">Security Settings</h3>
-                        <p className="text-gray-400">Security management features will be implemented here.</p>
+                        {/* <p className="text-gray-400">Security management features will be implemented here.</p> */}
+						
                     </motion.div>
                 );
 
