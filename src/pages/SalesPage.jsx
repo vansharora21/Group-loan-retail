@@ -17,7 +17,7 @@ const salesStats = {
 const SalesPage = () => {
 	return (
 		<div className='flex-1 overflow-auto relative z-10'>
-			<Header title='Sales Dashboard' />
+			<Header title='Loan Approval & Disbursement' />
 
 			<main className='max-w-7xl mx-auto py-6 px-4 lg:px-8'>
 				{/* SALES STATS */}
@@ -29,7 +29,7 @@ const SalesPage = () => {
 				>
 					<StatCard name='Total Revenue' icon={DollarSign} value={salesStats.totalRevenue} color='#6366F1' />
 					<StatCard
-						name='Avg. Order Value'
+						name='Value'
 						icon={ShoppingCart}
 						value={salesStats.averageOrderValue}
 						color='#10B981'

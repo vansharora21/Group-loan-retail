@@ -8,7 +8,7 @@ const userDemographicsData = [
 	{ name: "25-34", value: 30 },
 	{ name: "35-44", value: 25 },
 	{ name: "45-54", value: 15 },
-	{ name: "55+", value: 10 },
+	{ name: "55-60", value: 20 },
 ];
 
 const UserDemographicsChart = () => {
