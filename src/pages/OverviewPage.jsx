@@ -6,6 +6,7 @@ import StatCard from "../components/common/StatCard";
 import SalesOverviewChart from "../components/overview/SalesOverviewChart";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 import SalesChannelChart from "../components/overview/SalesChannelChart";
+import EMITable from "../components/overview/EMITable;";
 
 const OverviewPage = () => {
 	return (
@@ -21,9 +22,9 @@ const OverviewPage = () => {
 					transition={{ duration: 1 }}
 				>
 					<StatCard name='Total Groups Created' icon={Zap} value='586' color='#6366F1' />
-					<StatCard name=' Active Retailers' icon={Users} value='1000' color='#8B5CF6' />
+					{/* <StatCard name=' Active Retailers' icon={Users} value='1000' color='#8B5CF6' /> */}
 					<StatCard name='Pending Approvals (KYC, Loan)' icon={ShoppingBag} value='567' color='#EC4899' />
-					<StatCard name='Conversion Rate' icon={BarChart2} value='12.5%' color='#10B981' />
+					<StatCard name='Wallet Balance' icon={BarChart2} value='12000.55' color='#10B981' />
 				</motion.div>
 
 				{/* CHARTS */}
@@ -35,6 +36,8 @@ const OverviewPage = () => {
 					
 				</div>
 				<SalesChannelChart />
+				<br/>
+				<EMITable/>
 			</main>
 		</div>
 	);
